@@ -1,0 +1,37 @@
+/*HEADER - NAVBAR*/
+nav.navbar-expand-lg {
+    margin-top: 0;
+    height: 7%;
+    padding: 4px;
+    //background-color: #3b83bd;
+    background-color: #f0f8ff;
+}
+
+/*NAVBAR ELEMENT*/
+li.nav-item a.active {
+    background-color: #3b83bd;
+    border-bottom: 3px darkorange solid;
+}
+
+/* NAVBAR LINK */
+.nav-link {
+    font-size: 18px;
+}
+
+
+#currentDateTime {
+    font-size: 30px;
+    margin-left: auto;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 700px;
+}
