@@ -1,8 +1,10 @@
+var map;
+var timeline;
+
 jQuery(function () {
     initMap();
     updateDateTime();
 });
-
 
 // Inizializza la mappa
 function initMap() {
@@ -16,9 +18,12 @@ function initMap() {
         view: new ol.View({
             center: [0, 0],
             zoom: 2
-        })
+        }),
+        //timeline: new ol.Timeline({map: map, timeline: "#timeline", date_key: "when", format: ol.Format.GeoJSONTimeline})
     });
+
 }
+
 
 function updateDateTime() {
     var now = new Date();
