@@ -26,7 +26,6 @@ var map = new ol.Map ({
 });
 
 // Create Timeline control
-
 var tline = new ol.control.Timeline({
     className: 'ol-pointer',
     features: [{
@@ -53,24 +52,9 @@ tline.addButton ({
     }
 });
 
-// Show features on scroll
-/*tline.on('scroll', function(e){
-    var d = tline.roundDate(e.date, 'day')
-    $('.dateStart').text(d.toLocaleDateString(undefined, {year: 'numeric', month: 'short', day: 'numeric'}));
-    // Filter features visibility
-    vectorSource.getFeatures().forEach(function(f) {
-        var dt = f.get('time') - e.date;
-        if (Math.abs(dt) > 1000*3600*12) {
-            f.setStyle([]);
-        } else {
-            f.setStyle();
-        }
-    });
-});*/
-
 // Run on the timeline
 var running = false;
-var start = new Date('2022');
+var start = new Date('2023');
 var end = new Date('2023');
 function go(next) {
     var date = tline.getDate();
